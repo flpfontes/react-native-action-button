@@ -279,7 +279,7 @@ const ActionButton = props => {
   };
 
   return (
-    <View pointerEvents="box-none" style={[getOverlayStyles(), props.style]}>
+    <Animated.View pointerEvents="box-none" style={[getOverlayStyles(), props.style]}>
       <Animated.View
         pointerEvents="none"
         style={[
@@ -309,7 +309,7 @@ const ActionButton = props => {
           props.children &&
           _renderActions()}
       </View>
-    </View>
+    </Animated.View>
   );
 };
 
